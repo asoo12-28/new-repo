@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    direction: rtl;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1d3557; /* Navy blue */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 4px solid #f4a261; /* Gold accent */
+}
+
+header .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular logo */
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #f4a261; /* Gold color */
+    margin-top: 10px;
+}
+
+.social-media {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-item {
+    background-color: #fff;
+    border: 2px solid #1d3557; /* Navy blue border */
+    color: #1d3557;
+    padding: 10px 20px; /* تقليص المسافة داخل الخانات */
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 250px; /* تقليص عرض الخانات */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-item a {
+    color: #1d3557;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0; /* تقليص المسافة حول النص */
+    font-size: 1.4em; /* تقليص حجم النص */
+    text-align: center;
+}
+
+.social-item a:hover {
+    background-color: #1d3557;
+    color: #fff;
+}
+
+footer {
+    background-color: #1d3557;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* تحسين العرض على الهواتف */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .social-item {
+        width: 70%; /* جعل الخانات أصغر على الشاشات الصغيرة */
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}
